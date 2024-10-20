@@ -1,0 +1,14 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #93227d; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center;
+    text-decoration: none; /* Supprimer le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Transition pour le survol */
+}
+
+.button:hover {
+    background-color: #480a30; /* Couleur de fond au survol */
+}

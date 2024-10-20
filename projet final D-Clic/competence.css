@@ -1,0 +1,116 @@
+/* Style général */
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color:#957798 ;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #8d429e;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header ul li a:hover {
+    background-color: #8d429e;
+}
+
+/* Section Compétences */
+#skills {
+    padding: 50px;
+    text-align: center;
+    background-color: #dbace5;
+}
+
+#skills h1 {
+    font-size: 2.5em;
+    color: #260437;
+    margin-bottom: 30px;
+}
+
+/* Conteneur pour les compétences */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cartes de compétence */
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Rend les cartes invisibles au début pour l'animation */
+    transform: translateY(30px); /* Position initiale pour l'effet de glissement */
+}
+
+/* Animation d'apparition des compétences */
+.skill-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effet au survol des cartes */
+.skill-card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+    color: #94639e;
+    margin-top: 0;
+}
+
+.skill-card p {
+    color: #380643;
+}
+
+* Style du bouton */
+#home button {
+    background-color: #ead9e6; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    margin: 100px;
+    margin-left: 290px;
+    position: relative;
+    text-align: center;
+    padding : 20px 50px; /* Espacement intérieur (padding) */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Arrondi des coins */
+    cursor: pointer; /* Changement du curseur au survol */
+    font-size: 1em; /* Taille du texte */
+    transition: background-color 0.3s ease; /* Animation douce pour le changement de couleur au survol */
+}
+
+/* Effet au survol du bouton */
+#home button:hover {
+    background-color: #8d429e; /* Couleur de fond plus claire au survol */
+}
+
+h2{
+    text-align: center;
+}

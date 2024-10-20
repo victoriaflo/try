@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+
+    <!-- Navigation simple -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="A-propos.html">À propos</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="Activites.html">Activités</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ <!-- Section Résumé avec animation -->
+ <section id="resume">
+    <h1>Bienvenue sur mon Portfolio!!!</h1>
+    <p class="animate">Je suis une développeuse web passionnée par la création de sites modernes et interactifs. Découvrez mes compétences et interets  à travers ce portfolio.</p>
+
+</section>
+
+<!-- Section avec le bouton pour afficher les liens -->
+<section id="home">
+    <script src="js-final.js" defer></script>
+    <button id="show-links">Voir les autres pages</button>
+
+    <!-- Liste des liens qui sera affichée ou cachée en cliquant sur le bouton -->
+    <div id="links" style="display: none;">
+        <ol>
+            <ul><a href="A-propos.html">À propos</a></ul>
+            <ul><a href="competences.html">Compétences</a></ul>
+           <ul><a href="Activites.html">Projets</a></ul>
+           <ul><a href="Contact.html">Contact</a></u>
+        </ol>
+    </div>
+</section>
+
+
+
+<!-- Pied de page -->
+<footer>
+    <p>&copy; 2024 Mon Portfolio | Tous droits réservés.</p>
+</footer>
+
+
+
+    <!-- Script JavaScript -->
+    <script>
+        // Fonction pour afficher un message de bienvenue dynamique
+        function afficherMessageBienvenue() {
+            let nomUtilisateur = prompt("Quel est votre nom ?");
+            if (nomUtilisateur) {
+                let message = "Bienvenue sur mon Portfolio, " + nomUtilisateur + "!";
+                document.getElementById("welcome-message").textContent = message;
+            } else {
+                document.getElementById("welcome-message").textContent = "Bienvenue sur mon Portfolio !";
+            }
+        }
+
+        // Exécute la fonction lorsque la page est chargée
+        window.onload = afficherMessageBienvenue;
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

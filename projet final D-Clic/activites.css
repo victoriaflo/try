@@ -1,0 +1,84 @@
+
+
+/* Section Projets */
+#projects {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;font-family: 'Times New Roman', Times, serif;
+}
+
+#projects h1 {
+    font-size: 2.5em;
+    color: #1a031c;
+    margin-bottom: 30px;
+}
+
+/* Conteneur pour les projets */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cartes de projet */
+.project-card {
+    background-color: #b578a9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 21, 137, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Animation des projets */
+.project-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cartes de projet */
+.project-card img {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    max-height: 200px; /* Limiter la hauteur de l'image */
+    object-fit: cover; /* S'assure que l'image reste proportionnelle et remplisse l'espace */
+    border-radius: 10px; /* Ajoute un arrondi aux bords de l'image */
+    display: block; /* S'assure que l'image est un bloc et prend la largeur */
+    margin-bottom: 15px; /* Ajoute un espacement en dessous de l'image */
+    object-fit:scale-down;
+}
+
+/* Titre du projet */
+.project-card h3 {
+    color: #3e073c;
+    margin-top: 15px;
+}
+
+/* Description du projet */
+.project-card p {
+    color: #551056;
+}
+
+/* Lien du projet */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #821997;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #2a021e;
+}
+
+/* Effet au survol des cartes */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(159, 78, 154, 0.15);
+}

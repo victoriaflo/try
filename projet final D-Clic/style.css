@@ -1,0 +1,207 @@
+/* Style général du site */
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #957798;
+    line-height: 1.6;
+}
+
+/* Style de la navigation */
+header {
+    background-color: #8d429e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration:wavy;
+    text-transform: uppercase;
+    text-overflow: initial;
+    padding: 5px 10px;
+    text-decoration-color: #210228;
+}
+header ul li a:hover {
+    background-color: #36133e;
+}
+
+/* Section Résumé */
+
+
+
+#resume h1 {
+    font-size: 2.5em;
+    color: purple;
+    
+}
+
+#resume p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* Animation pour le résumé */
+.animate {
+    animation: slideIn 3s ease-in-out;
+}
+
+/* Animation keyframes*/
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Supprimer l'effet de focus par défaut */
+button, a {
+    outline: none; /* Retire le contour bleu clair */
+    border: none;  /* Assure que les boutons n'ont pas de bordure */
+    background: none;
+}
+ 
+/* Style du bouton */
+#home button {
+    background-color: #ead9e6; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur (padding) */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Arrondi des coins */
+    cursor: pointer; /* Changement du curseur au survol */
+    font-size: 1em; /* Taille du texte */
+    transition: background-color 0.3s ease; /* Animation douce pour le changement de couleur au survol */
+}
+
+/* Effet au survol du bouton */
+#home button:hover {
+    background-color: #8d429e; /* Couleur de fond plus claire au survol */
+}
+
+ 
+/* Style du pied de page */
+footer {
+    background-color:#8d429e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+/* Style des sections */
+section {
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Accueil */
+#home {
+    background-color: #e0f7fa;
+    padding: 50px;
+}
+
+#home img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* À propos */
+#about {
+    background-color: #fce4ec;
+}
+
+/* Compétences */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background-color: #81c784;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Projets */
+.project {
+    background-color: #ffcc80;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #ff5722;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire de contact */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
